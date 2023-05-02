@@ -40,9 +40,7 @@ async function setDiscordMessage() {
 				Object.keys(languages).length - 1
 					? ['all']
 					: Object.keys(s.translations);
-			return `- [\`${
-				s.subpath
-			}\`](<https://github.com/XamHans/_NewDevsOnTheBlock/docs/tree/main/${join(
+			return `- [\`${s.subpath}\`](<https://github.com/XamHans/_NewDevsOnTheBlock/tree/main/${join(
 				PAGE_SOURCE_DIRECTORY,
 				'en',
 				s.subpath

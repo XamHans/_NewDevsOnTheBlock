@@ -28,7 +28,7 @@ function setDiscordMessage(author, id, commitMsg) {
 
 	setOutput(
 		'DISCORD_MESSAGE',
-		`${emoji} **Merged!** ${author}: [\`${commitMessage}\`](<https://github.com/XamHans/_NewDevsOnTheBlock/docs/commit/${id}>)${coAuthorThanks}`
+		`${emoji} **Merged!** ${author}: [\`${commitMessage}\`](<https://github.com/XamHans/_NewDevsOnTheBlock/commit/${id}>)${coAuthorThanks}`
 	);
 }
 
