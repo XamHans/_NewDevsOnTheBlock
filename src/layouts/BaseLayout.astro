@@ -9,6 +9,7 @@ import { rtlLanguages } from '../i18n/languages';
 import { useTranslations } from '../i18n/util';
 import { getLanguageFromURL } from '../util';
 import { getPageCategory } from '../util/getPageCategory';
+import HeadCommon from '~/components/HeadCommon.astro';
 
 export interface Props {
 	content: CollectionEntry<'docs'>['data'];
@@ -32,6 +33,8 @@ if (isFallback) canonicalURL.pathname = canonicalURL.pathname.replace(`/${lang}/
 <html dir={direction} lang={bcpLang} class="initial">
 	<head>
 		<HeadSEO content={content} canonicalURL={canonicalURL} />
+		<HeadCommon />
+
 		<title set:html={formatTitle(content)} />
 		<style>
 			.sidebar {
