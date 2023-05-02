@@ -1,6 +1,5 @@
 ---
 import Footer from '../components/Footer/Footer.astro';
-import HeadCommon from '../components/HeadCommon.astro';
 import Header from '../components/Header/Header.astro';
 import { normalizeLangTag } from '../i18n/bcp-normalize';
 import { rtlLanguages } from '../i18n/languages';
@@ -20,7 +19,6 @@ const t = useTranslations(Astro);
 
 <html dir={dir} lang={bcpLang} class="initial">
 	<head>
-		<HeadCommon />
 		<title>{`${title} 🚀 ${t('site.title')}`}</title>
 		<style>
 			html,
