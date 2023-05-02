@@ -1,0 +1,36 @@
+---
+const { name, description, image } = Astro.props
+---
+
+<div>
+  <img src={image} alt={`Image of ${name}`} />
+	<strong>{name}:</strong>
+  <p>
+    {description}
+  </p>
+</div>
+
+<style>
+  div {
+    align-items: center;
+    display: flex;
+		margin-top: 100px;
+  }
+
+	strong {
+		display: block;
+		margin: 0px 5px 0px 0px;
+	}
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: block;
+    margin-right: 20px;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+</style>

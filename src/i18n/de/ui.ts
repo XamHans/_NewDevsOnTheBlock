@@ -11,6 +11,7 @@ export default UIDictionary({
 	// Left Sidebar
 	'leftSidebar.a11yTitle': 'Primär',
 	'leftSidebar.learnTab': 'Lernen',
+	'leftSidebar.stackTab': 'Web3 Stack',
 	'leftSidebar.referenceTab': 'Referenz',
 	'leftSidebar.viewInEnglish': 'Auf Englisch ansehen',
 	// Right Sidebar
@@ -18,13 +19,14 @@ export default UIDictionary({
 	'rightSidebar.onThisPage': 'Auf dieser Seite',
 	'rightSidebar.overview': 'Überblick',
 	'rightSidebar.community': 'Community',
-	'rightSidebar.joinDiscord': 'Tritt unserem Discord bei',
+	'rightSidebar.communityApp': 'Community App',
+	'rightSidebar.createProfile': 'Erstelle ein Profil',
 	'rightSidebar.readBlog': 'Lies unsere Blog-Beiträge',
 	'rightSidebar.openCollective': 'Unsere Open Collective-Seite',
 	'rightSidebar.contribute': 'Wirke mit',
 	'rightSidebar.editPage': 'Bearbeite diese Seite',
 	'rightSidebar.translatePage': 'Übersetze diese Seite',
-	'rightSidebar.github': 'Astro Docs auf GitHub',
+	'rightSidebar.github': 'NewDevsOnTheBlock Docs auf GitHub',
 	// `<ThemeToggleButton>` acessibility labels
 	'themeToggle.useLight': 'Nutze das helle Theme',
 	'themeToggle.useDark': 'Nutze das dunkle Theme',

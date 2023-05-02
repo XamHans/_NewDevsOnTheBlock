@@ -1,9 +1,10 @@
 ---
 export interface Props {
 	isCorrect?: boolean;
+	Details?: string;
 }
 
-const { isCorrect } = Astro.props as Props;
+const { isCorrect, Details } = Astro.props as Props;
 ---
 
 <li>
@@ -13,6 +14,8 @@ const { isCorrect } = Astro.props as Props;
 			Astro.slots.has('feedback') && (
 				<template>
 					<slot name="feedback" />
+					<label>{Details}</label>
+
 				</template>
 			)
 		}

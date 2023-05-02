@@ -11,6 +11,7 @@ export default {
 	// Left Sidebar
 	'leftSidebar.a11yTitle': 'Primary',
 	'leftSidebar.learnTab': 'Learn',
+	'leftSidebar.stackTab': 'Web3 Stack',
 	'leftSidebar.referenceTab': 'Reference',
 	'leftSidebar.viewInEnglish': 'View in English',
 	'leftSidebar.sponsoredBy': 'Sponsored by',
@@ -20,13 +21,15 @@ export default {
 	'rightSidebar.overview': 'Overview',
 	'rightSidebar.community': 'Community',
 	'rightSidebar.joinDiscord': 'Join us on Discord',
+	'rightSidebar.communityApp': 'Community App',
+	'rightSidebar.createProfile': 'Create a profile',
 	'rightSidebar.readBlog': 'Read our blog posts',
 	'rightSidebar.openCollective': 'Our Open Collective',
 	'rightSidebar.contribute': 'Contribute',
 	'rightSidebar.contributorGuides': 'Contributor Guides',
 	'rightSidebar.editPage': 'Edit this page',
 	'rightSidebar.translatePage': 'Translate this page',
-	'rightSidebar.github': 'Astro Docs on GitHub',
+	'rightSidebar.github': 'Docs on GitHub',
 	// Footer
 	'footer.privacyPolicy': 'Privacy Policy',
 	// `<ThemeToggleButton>` acessibility labels
