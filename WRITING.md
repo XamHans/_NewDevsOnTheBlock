@@ -1,7 +1,6 @@
-
 # Writing Guide
 
-This writing guide is in progress! If you have any questions or suggestions, please [make a new issue](https://github.com/withastro/docs/issues/new) and let us know.
+This writing guide is in progress! If you have any questions or suggestions, please [make a new issue](https://github.com/XamHans/_NewDevsOnTheBlock/docs/issues/new) and let us know.
 
 Please use the following as a general guideline, and thank you in advance for understanding that contributions may be edited to match existing style, tone, conventions and structure.
 
@@ -14,7 +13,7 @@ All readers can benefit from clear, straightforward writing, but this can be par
 - have cognitive, learning or attention difficulties.
 - come from a non-traditional development background.
 
-We aim for **clear** and **helpful** documentation that serves the reader above all else! 
+We aim for **clear** and **helpful** documentation that serves the reader above all else!
 
 Usually this means choosing:
 
@@ -31,7 +30,7 @@ You can check your writing by pasting it into [Hemingway App](https://hemingwaya
 
 Please try to use the following language conventions when contributing to the docs:
 
-- When addressing the reader, do so in the present tense and do not include yourself. You can use *you*, but do not use *we*, *we'll*, *us*, *let's* etc. (You are not with the reader at this exact moment.) Instead, use phrases like, "You can now safely delete this line of code." Or simply, "Delete this line of code. It is no longer needed." Never use *I*. This guide is not about what you can do!  
+- When addressing the reader, do so in the present tense and do not include yourself. You can use _you_, but do not use _we_, _we'll_, _us_, _let's_ etc. (You are not with the reader at this exact moment.) Instead, use phrases like, "You can now safely delete this line of code." Or simply, "Delete this line of code. It is no longer needed." Never use _I_. This guide is not about what you can do!
 
 - It's OK to use exclamation points every now and then, but please try to do so only when emphasizing something that is truly exciting, surprising, or encouraging/reassuring. If you are not sure, use a period instead. Exclamation points can send "positive vibes" to the reader. But, if a reader is frustrated, confused, or in a serious state of mind, then exclamation points can seem insensitive or juvenile. Do not use too many.
 
@@ -39,13 +38,13 @@ Please try to use the following language conventions when contributing to the do
 
 As a general guide for writing tone, you can follow the [Google Developers Guide](https://developers.google.com/style/tone):
 
->In your documents, aim for a voice and tone that's conversational, friendly, and respectful without being overly colloquial or frivolous; a voice that's casual and natural and approachable, not pedantic or pushy. Try to sound like a knowledgeable friend who understands what the developer wants to do.
+> In your documents, aim for a voice and tone that's conversational, friendly, and respectful without being overly colloquial or frivolous; a voice that's casual and natural and approachable, not pedantic or pushy. Try to sound like a knowledgeable friend who understands what the developer wants to do.
 >
->Don't try to write exactly the way you speak; you probably speak more colloquially and verbosely than you should write, at least for developer documentation. But aim for a conversational tone rather than a formal one.
+> Don't try to write exactly the way you speak; you probably speak more colloquially and verbosely than you should write, at least for developer documentation. But aim for a conversational tone rather than a formal one.
 >
->Don't try to be super-entertaining, but also don't aim for super-dry. Be human, let your personality show, and be memorable. But remember that the primary purpose of the document is to provide information to someone who's looking for it and may be in a hurry.
+> Don't try to be super-entertaining, but also don't aim for super-dry. Be human, let your personality show, and be memorable. But remember that the primary purpose of the document is to provide information to someone who's looking for it and may be in a hurry.
 >
->Remember that many readers aren't fluent English speakers, many of them come from cultures different from yours, and your document might be translated into other languages. For more information, see Writing for a global audience.
+> Remember that many readers aren't fluent English speakers, many of them come from cultures different from yours, and your document might be translated into other languages. For more information, see Writing for a global audience.
 
 Also see tips on how to [write inclusive documentation](https://developers.google.com/style/inclusive-documentation) and [write accessible documentation](https://developers.google.com/style/accessibility)
 
@@ -74,36 +73,38 @@ Here is an example edit we made to one of our own recipes to illustrate the diff
 **Example:** Introduce a set of instructions with a "Big Step" (e.g. overall goal) + reason before listing specific steps to follow
 
 **Before: narrative style**
+
 > As well as needing your content in different languages, you will often need to translate labels for UI elements around your site. We can do this by creating dictionaries of terms instead of hard-coding text in one language in our templates.
 >
 > 1.
 > 2. ...
 
 **After: imperative style**
+
 > Create dictionaries of terms to translate the labels for UI elements around your site. This allows your visitors to experience your site fully in their language.
 >
 > 1.
 > 2. ...
 
-
 ### Opinionated Instructions
 
-Sometimes you will need to give an instruction where the reader has options. You want to illustrate the example with the specific choice you made, but you also want to make it clear that other decisions are acceptable. 
+Sometimes you will need to give an instruction where the reader has options. You want to illustrate the example with the specific choice you made, but you also want to make it clear that other decisions are acceptable.
 
-In this case, try to separate the instruction from the opinion. First, give the action to take with a more general description. Then state the opinionated choice that your example uses. Your reader will be able to first process what you are doing and then will see the choice you have made. They can still follow your instruction, making a choice that works for their own project. 
+In this case, try to separate the instruction from the opinion. First, give the action to take with a more general description. Then state the opinionated choice that your example uses. Your reader will be able to first process what you are doing and then will see the choice you have made. They can still follow your instruction, making a choice that works for their own project.
 
-This can be easier to follow (and perhaps more reassuring!) than a statement that gives multiple options. This is also usually easier to write since you do not have to remind the reader that this file is from *your* example, and may not appear in their project.
+This can be easier to follow (and perhaps more reassuring!) than a statement that gives multiple options. This is also usually easier to write since you do not have to remind the reader that this file is from _your_ example, and may not appear in their project.
 
-**Example:** An instruction to add a component where the component *could* go in multiple files/places and still achieve the goal.
+**Example:** An instruction to add a component where the component _could_ go in multiple files/places and still achieve the goal.
 
 **Before: vague initial instruction**
 
 > Add the `LanguagePicker` component to your site. A good place might be in a navigation component or a footer shown on every page.
 
 **After: add necessary context to the instruction, followed by opinionated usage**
+
 > Add the `LanguagePicker` component to your site in a component that is shown on every page. The example below adds this to the page footer:
 
-<!-- 
+<!--
 
 
 -->
@@ -202,6 +203,7 @@ Or, it can be used in a short block of information, for example:
 
 Type: `string | boolean`
 Default: `false`
+
 <Since v="0.24.0" />
 ```
 
@@ -216,7 +218,7 @@ Setting a custom package name helps us document integrations and other packages.
 Sometimes it may be useful to display the latest version of a package on a page. For this, you can use the `<Version />` component, which must receive a valid package name from the npm registry as its `pkgName` prop.
 
 ```md
-Astro's latest version:  <Version pkgName="astro" />
+Astro's latest version: <Version pkgName="astro" />
 ```
 
 This will render **Astro's latest version: v1.2.1**.
@@ -237,7 +239,9 @@ To use an existing Tabs component (e.g. `<PackageManagerTabs>` , `<UIFrameworkTa
 
 ```mdx
 import InstallGuideTabGroup from '~/components/TabGroup/InstallGuideTabGroup.astro';
-import PackageManagerTabs from '~/components/tabs/PackageManagerTabs.astro'
+import PackageManagerTabs from '~/components/tabs/PackageManagerTabs.astro
+
+'
 ```
 
 Then, create a `<Fragment>` for each tab. The fragment's slot name will identify the tab label and the content between the opening and closing `<Fragment>...</Fragment>` tags will be the panel content.
@@ -247,29 +251,18 @@ Here is an example of `<PackageManagerTabs>` showing the `create astro` commands
 ````jsx
 <PackageManagerTabs>
   <Fragment slot="npm">
-  ```shell
-  # create a new project with npm
-  npm create astro@latest
-  ```
+    ```shell # create a new project with npm npm create astro@latest ```
   </Fragment>
   <Fragment slot="pnpm">
-  ```shell
-  # create a new project with pnpm
-  pnpm create astro@latest
-  ```
+    ```shell # create a new project with pnpm pnpm create astro@latest ```
   </Fragment>
-  <Fragment slot="yarn">
-  ```shell
-  # create a new project with yarn
-  yarn create astro
-  ```
-  </Fragment>
+  <Fragment slot="yarn">```shell # create a new project with yarn yarn create astro ```</Fragment>
 </PackageManagerTabs>
 ````
 
 #### Creating your own custom Tabs component variation
 
-If necessary, you can also create your own custom Tabs component using the base `Tabs.tsx` component. To do this, create a new Astro component in the [`src/components/tabs`](https://github.com/withastro/docs/blob/main/src/components/tabs/) directory, e.g. `MyCustomTabs.astro`. (Do not use `<Tabs>` directly in a Markdown page. Create your own component instead.)
+If necessary, you can also create your own custom Tabs component using the base `Tabs.tsx` component. To do this, create a new Astro component in the [`src/components/tabs`](https://github.com/XamHans/_NewDevsOnTheBlock/docs/blob/main/src/components/tabs/) directory, e.g. `MyCustomTabs.astro`. (Do not use `<Tabs>` directly in a Markdown page. Create your own component instead.)
 
 Inside `MyCustomTabs.jsx`, import the Tabs component and create one `<Tabs>` component. Be sure to include the `client:visible` directive and give a unique name to the `sharedStore`. Each created Tabs component should have its own `sharedStore` to avoid unrelated tabs changing one another accidentally.
 
@@ -277,9 +270,10 @@ Inside `MyCustomTabs.jsx`, import the Tabs component and create one `<Tabs>` com
 ---
 import Tabs from './Tabs';
 ---
-<Tabs client:visible sharedStore="my-shared-store">
-</Tabs>
+
+<Tabs client:visible sharedStore="my-shared-store" />
 ```
+
 To create your custom tab component, follow the pattern below using a `<Fragment>` with a named slot for each tab and panel to be created. Note that you must define your tab names here (e.g. Preact, React, Solid, Svelte, Vue), but the content for each panel will be written when your custom component is imported and used in a Markdown page, as in the previous `<PackageManagerTabs>` example.
 
 ```jsx
@@ -306,7 +300,7 @@ The tabs will be displayed in alphabetical order, according to the slot name (e.
 
 ## Lists vs. Headings
 
-Both lists and headings are used in our docs for readability. We will often start by using `<ul>` to list related items. 
+Both lists and headings are used in our docs for readability. We will often start by using `<ul>` to list related items.
 
 But, when individual line items become large, span multiple paragraphs, or contain too many `<code>` terms affecting readability, then we will change to section headings.
 
@@ -327,61 +321,69 @@ Do use headings to break up text into organized sections! Many readers prefer to
 ## Examples (e.g. examples)
 
 Current practice is to use the words "for example" in full within the text of a sentence, but (e.g. Netlify, Vercel) inside a parenthetical so as to not take the reader out of the flow the sentence.
- 
-> For example, when passing props . . . 
 
-> If you store your Astro project in an online Git provider (e.g. GitHub, GitLab), you can . . . 
+> For example, when passing props . . .
+
+> If you store your Astro project in an online Git provider (e.g. GitHub, GitLab), you can . . .
 
 ## Code Samples
 
-We take great pride in our code samples, but they require a little extra work to write! 
+We take great pride in our code samples, but they require a little extra work to write!
 
 Don't worry! We'll help you out in a PR if your code authoring needs some adjustment before merging. But, you can make use of all our features below and preview them locally to make sure your code looks the way you want.
 
 If you are **editing existing code samples**, then please make sure to preview your updated code sample! Update any necessary syntax such as line highlighting or title (file name).
 
-If you are **adding new code samples**, you have the option of adding a file name (usually recommended!) to be displayed as a title. You can also highlight individual words, phrases, or entire lines in regular or "diff" (red/green) style. 
+If you are **adding new code samples**, you have the option of adding a file name (usually recommended!) to be displayed as a title. You can also highlight individual words, phrases, or entire lines in regular or "diff" (red/green) style.
 
 **All extra code styling is written on the opening line of the code block, immediately after the language.**
 
 Here are two examples of what our code snippets look like written in Markdown, just so you can see what it looks like in action. Syntax explanations follow.
 
-#### Example 1 
+#### Example 1
+
 - Use the file name as a title
 - highlight rows 9 and 10
-``````markdown
-```astro title="src/pages/nested-components.astro" {9-10}
-``````
 
-#### Example 2 
+````markdown
+```astro title="src/pages/nested-components.astro" {9-10}
+
+```
+````
+
+#### Example 2
+
 - use the file name as a title (alt method)
 - apply "+ diff" styling (green backround) to any occurance of `<Button />`
 - highlight any occurance of `{props.title}` and `{props.social}`
 
-``````markdown
+````markdown
 ```jsx /{props.(title|socialLinks)}/ ins="<Button />"
 // src/components/MySidebar.jsx
-``````
+```
+````
 
 ### File Name as Title
 
 Most code should include a sample file name so that we give the reader not only copy-pastable code, but also provide the file into which that code should be pasted.
 
-`title="src/pages/index.astro"` 
+`title="src/pages/index.astro"`
 
 Alternatively, write the file name as a code comment in a separate line. Write the file name of `.astro` files immediately after the opening `---`
-``````markdown
- ```astro
- ---
- // src/pages/index.astro
- ---
-```
-``````
 
-``````markdown
- ```jsx
- // src/components/MyReactComponent.jsx
-``````
+````markdown
+```astro
+---
+// src/pages/index.astro
+---
+```
+````
+
+````markdown
+```jsx
+// src/components/MyReactComponent.jsx
+```
+````
 
 ### Line Highlighting
 
@@ -390,7 +392,6 @@ Use Curly braces to highlight (default), or show "diff" style (+/-) "inserted" o
 - {4-7,10} - Highlights lines 4, 5, 6, 7 and 10
 - del={2} - Shows "diff" style (-) at line 2
 - ins={7-9} - Shows "diff" style (+) lines 7-9
-
 
 ### Text Highlighting
 
@@ -406,15 +407,13 @@ Regular expressions are supported within slashes `/ /`. See a handy [tool for co
 
 - /{frontmatter.(title|description)}/ - Highlight all instances of `{frontmatter.title}` and `{frontmatter.description}`
 
-> ***Note***
+> **_Note_**
+>
 > - del="<p class=\"hi\">" - Use `\` to escape quotation marks and other special characters in the search string
 >
->- del='\<p class="hi">' - Use single quotes to make it easier to match double quotes
+> - del='\<p class="hi">' - Use single quotes to make it easier to match double quotes
 
-
-
-
-### Don't destructure props 
+### Don't destructure props
 
 The following prop syntax is relevant to all component frameworks we support:
 
@@ -427,14 +426,13 @@ export default function MySidebar(props) {
       <main>{props.children}</main>
       <footer>{props.socialLinks}</footer>
     </aside>
-  )
+  );
 }
-
 ```
 
 ## Next Steps
 
 - [Read the docs](https://docs.astro.build/)
-- [Fork the docs](https://github.com/withastro/docs/fork)
-- [Raise an issue](https://github.com/withastro/docs/issues/new)
+- [Fork the docs](https://github.com/XamHans/_NewDevsOnTheBlock/docs/fork)
+- [Raise an issue](https://github.com/XamHans/_NewDevsOnTheBlock/docs/issues/new)
 - [Discuss the docs](https://discord.gg/cZDZU3hJHc)
