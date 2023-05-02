@@ -166,9 +166,7 @@ const instanceId = Math.round(Math.random() * 10e9).toString(36);
 
 			// Pre-fills the GitHub issue with any message a site visitor has already typed in the message box
 			githubButton?.addEventListener('click', () => {
-				const newIssueUrl = new URL(
-					'https://github.com/XamHans/_NewDevsOnTheBlock/docs/issues/new'
-				);
+				const newIssueUrl = new URL('https://github.com/XamHans/_NewDevsOnTheBlock/issues/new');
 				const titles = { issue: '⚠️ Issue', idea: '💡 Idea', other: '🐠 Feedback' };
 				if (form.category.value in titles) {
 					const title = titles[form.category.value as keyof typeof titles];

@@ -18,7 +18,7 @@ import { theme } from './syntax-highlighting-theme';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs.astro.build/',
+	site: 'https://newdevsontheblock.com',
 	integrations: [
 		AutoImport({
 			imports: [asideAutoImport, codeSnippetAutoImport],
