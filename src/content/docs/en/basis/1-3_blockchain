@@ -1,0 +1,7 @@
+### Blockchain
+
+Bitcoin sovled this problem by using a system called blockchain.
+The concept of a "chain-of-blocks" was introduced in the Bitcoin Whitepaper in October 2008 by Satoshi Nakamoto.
+It propsed a system where all computers in a network hold an identical copy of a ledger of transactions, hich acts as a single point of reference for everyone in the network. All network nodes collectively update and manage this ledger, which represents a universal data set that every actor in the network can trust.
+A blockchain is a distributed ledger that is shared among all participants in a P2P network.
+[Centralized vs Distributed](https://imiblockchain.com/wp-content/uploads/2020/11/centralized-vs-distributed-ledger-technology.jpg)

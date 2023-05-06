@@ -16,11 +16,11 @@
     to = "/en/reference/integrations-reference"
 
   [[redirects]]
-    from = "/en/core-concepts/component-hydration"
+    from = "/en/basis/component-hydration"
     to = "/en/concepts/islands"
 
   [[redirects]]
-    from = "/core-concepts/component-hydration"
+    from = "/basis/component-hydration"
     to = "/en/concepts/islands"
 
   [[redirects]]
@@ -36,15 +36,15 @@
     to = "/:lang/:splat"
 
   [[redirects]]
-    from = "/:lang/core-concepts/partial-hydration"
+    from = "/:lang/basis/partial-hydration"
     to = "/:lang/concepts/islands"
   
   [[redirects]]
-    from = "/core-concepts/collections"
+    from = "/basis/collections"
     to = "/en/guides/content-collections"
   
   [[redirects]]
-    from = "/:lang/core-concepts/collections"
+    from = "/:lang/basis/collections"
     to = "/:lang/guides/content-collections"
 
   [[redirects]]
