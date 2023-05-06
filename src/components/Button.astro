@@ -2,12 +2,12 @@
 const { class: className = '', style, href } = Astro.props;
 // Wrap in <span> because Houdini is disabled for a[href] for security
 
-const { variant = 'primary' } = Astro.props;
+const { variant = 'primary', text } = Astro.props;
 ---
 
-<span class:list={[`link pixel variant-${variant}`, className]} {style}>
+<span class:list={[`link pixel  variant-${variant}`, className]} {style}>
 	<a {href}>
-		<span><slot /></span>
+		<span>{text}<slot /></span>
 	</a>
 </span>
 
@@ -25,9 +25,7 @@ const { variant = 'primary' } = Astro.props;
 	.pixel::before {
 		content: '';
 		position: absolute;
-		top: calc(var(--pixel-size) * 1px);
 		right: 0;
-		bottom: calc(var(--pixel-size) * 1px);
 		left: 0;
 		background: var(--background);
 		z-index: -1;

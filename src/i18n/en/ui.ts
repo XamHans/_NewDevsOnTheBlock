@@ -31,7 +31,7 @@ export default {
 	'rightSidebar.translatePage': 'Translate this page',
 	'rightSidebar.github': 'Docs on GitHub',
 	// Footer
-	'footer.privacyPolicy': 'Privacy Policy',
+	'footer.communityApp': 'Community App',
 	// `<ThemeToggleButton>` acessibility labels
 	'themeToggle.useLight': 'Use light theme',
 	'themeToggle.useDark': 'Use dark theme',
