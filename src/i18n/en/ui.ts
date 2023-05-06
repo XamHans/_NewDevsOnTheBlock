@@ -3,11 +3,12 @@ export default {
 	'a11y.sectionLink': 'Section titled',
 	'navbar.a11yTitle': 'Top',
 	// Site settings
-	'site.title': 'Astro Documentation',
-	'site.description': 'Build faster websites with less client-side JavaScript.',
-	'site.og.imageSrc': '/default-og-image.png?v=1',
+	'site.title': 'NDOB - Connect with other web3 developers',
+	'site.description':
+		'Connect with other web3 developers. Learn from each other. Build awesome stuff.',
+	'site.og.imageSrc': '/images/ndob-hero.webp',
 	'site.og.imageAlt':
-		'astro logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground',
+		'ndob logo on a starry expanse of space, with a purple saturn-like planet floating in the right foreground',
 	// Left Sidebar
 	'leftSidebar.a11yTitle': 'Primary',
 	'leftSidebar.learnTab': 'Learn',
