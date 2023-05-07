@@ -20,10 +20,9 @@ const t = useTranslations(Astro);
 			<ul>
 				<li>
 					<a class="logo" href="https://newdevsontheblock.com/">
-						<h5 >NewDevsOnTheBlock</h5>
+						<h5>NewDevsOnTheBlock</h5>
 					</a>
 				</li>
-				
 			</ul>
 		</div>
 		<ThemeToggleButton
@@ -32,7 +31,7 @@ const t = useTranslations(Astro);
 			isInsideHeader={true}
 		/>
 		{lang && <LanguageSelect lang={lang} label={t('languageSelect.label')} client:idle />}
-		<Search {lang} labels={docsearchStrings} />
+		<!-- <Search {lang} labels={docsearchStrings} /> -->
 		<SidebarToggle client:idle />
 	</nav>
 </header>
@@ -61,24 +60,31 @@ const t = useTranslations(Astro);
 
 	.headline-font {
 		font-family: $bungee;
-	cursor: pointer;
-	background: linear-gradient(to bottom, #2b81ff,  #053782,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	line-height: 1.2;
-	@include transition(0.3s);
-	
-
-	&:hover {
-		background: linear-gradient(to right,  #2b81ff, #053782,); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		cursor: pointer;
+		background: linear-gradient(
+			to bottom,
+			#2b81ff,
+			#053782
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		line-height: 1.2;
-		-webkit-transition: background 1s ease-out;  
-		-moz-transition: background 1s ease-out;  
-		-o-transition: background 1s ease-out;  
-		transition: background 1s ease-out;  
-	}
+		@include transition(0.3s);
+
+		&:hover {
+			background: linear-gradient(
+				to right,
+				#2b81ff,
+				#053782
+			); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			line-height: 1.2;
+			-webkit-transition: background 1s ease-out;
+			-moz-transition: background 1s ease-out;
+			-o-transition: background 1s ease-out;
+			transition: background 1s ease-out;
+		}
 	}
 
 	.nav-wrapper {
