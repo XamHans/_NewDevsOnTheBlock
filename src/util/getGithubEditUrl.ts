@@ -13,7 +13,7 @@ export function getGithubEditUrl(Astro: Readonly<AstroGlobal>) {
 	const githubEditUrl =
 		content.githubURL && (lang === 'en' || isFallback)
 			? `${content.githubURL}${content.hasREADME ? 'README.md' : ''}`
-			: `https://github.com/XamHans/_NewDevsOnTheBlock/blob/main/${currentFile}`;
+			: `https://github.com/XamHans/_NewDevsOnTheBlock/blob/master/${currentFile}`;
 
 	return githubEditUrl;
 }
