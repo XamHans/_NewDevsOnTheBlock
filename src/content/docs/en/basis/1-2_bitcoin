@@ -9,3 +9,9 @@ i18nReady: true
 The Bitcoin protocol (a decentralized digital currency) introduced 2009 a system that allows the transfer of value without the need for a centralized entity.
 It is a peer-to-peer network that allows the transfer of value from one person to another without the need for a third party.
 But how did they manage the state problem? How did they manage that everyone agreed on who owns what and who has the right to do what?
+
+Bitcoin solved this problem by using a system called the blockchain. The concept of a "chain-of-blocks" was introduced in the Bitcoin Whitepaper in October 2008 by Satoshi Nakamoto.
+
+*Fun fact: The original form of the blockchain was developed by Stuart Haber and W. Scott Stornetta in 1991. They were the first to come up with the idea of encrypting documents in data blocks using hash values and timestamps and chaining them together. It was not until 2009 that this principle attracted widespread interest: In the white paper "Bitcoin: A Peer-to-Peer Electronic Cash System," the ideas of blockchain and bitcoin were explained coherently for the first time.*
+Bitcoin proposed a system where all computers in a network hold an identical copy of a ledger of transactions, which acts as a single point of reference for everyone in the network. All network nodes collectively update and manage this ledger, which represents a universal dataset that every actor in the network can trust.
+People and institutions who do not know or trust each other, reside in different countries, are subject to different jurisdictions and who have no legally binding agreements with each other can now interact over the Internet without the need for trusted thrid parties like banks, Internet platforms or other types of clearing institutions. Now lets have a closer look at how a blockchain works from a technical aspect.
