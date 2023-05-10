@@ -4,10 +4,44 @@ description: Blockchain is the fundamental technology in web3. It is a distribut
 i18nReady: true
 ---
 
-### Blockchain
+# How does a blockchain work?
 
-Bitcoin sovled this problem by using a system called blockchain.
-The concept of a "chain-of-blocks" was introduced in the Bitcoin Whitepaper in October 2008 by Satoshi Nakamoto.
-It propsed a system where all computers in a network hold an identical copy of a ledger of transactions, hich acts as a single point of reference for everyone in the network. All network nodes collectively update and manage this ledger, which represents a universal data set that every actor in the network can trust.
-A blockchain is a distributed ledger that is shared among all participants in a P2P network.
-[Centralized vs Distributed](https://imiblockchain.com/wp-content/uploads/2020/11/centralized-vs-distributed-ledger-technology.jpg)
+A blockchain is like a digital ledger, or a chain of blocks. Each block contains information about multiple transactions, like who sent it and who received it. The blocks are linked together in a chain, which makes it difficult to change or tamper with the information. Each block also has a unique code, called a hash, that helps to identify it and keep it secure. The hash is like a digital fingerprint that is created using complex math equations.
+
+## Chain of Blocks
+
+![Chain of blocks - Öz, B., Hoops, F., Gallersdörfer, U., & Matthes, F. (2022). “Blockchain-based Systems Engineering”. Lecture Slides. TU Munich](Blockchain%20-%20Detailed%2013308b931cb84ac4b01b8343bfedaca5/Untitled.png)
+
+Chain of blocks - Öz, B., Hoops, F., Gallersdörfer, U., & Matthes, F. (2022). “Blockchain-based Systems Engineering”. Lecture Slides. TU Munich
+
+Before we dive deep into, lets clear what a hash is and why it is so useful.
+
+### Hashing
+
+Hashing is a process of converting data into a unique code that represents the data. This code is called a hash.
+
+![Image showing hash function ](Blockchain%20-%20Detailed%2013308b931cb84ac4b01b8343bfedaca5/Untitled%201.png)
+
+Image showing hash function 
+
+ Each block in the chain contains a hash of the previous block, which creates a link between the blocks. This link ensures that the blocks cannot be altered or tampered with, as any change to one block would change its hash, which would then change the hash of the subsequent block. This makes the chain of blocks secure and tamper-proof. Hashing is used in blockchain technology to ensure the integrity and security of the data stored in the chain. It is a way to verify that the data has not been altered or corrupted.
+
+I*f we change the amount of one transaction in the first block, this will result in a different hash because we have now a different input to the hash function. Our second block stored the hash of the first block but now because of our manipulation we have a different hash that is not equal to what the second block has stored. What must we do now? Right we need to re-create the hash of every block, and this is not possible to achieve. Because every other node in the network also stored this blocks with the right hash and this shows that you are trying to cheat.*
+
+![IMG_20230509_160316.jpg](Blockchain%20-%20Detailed%2013308b931cb84ac4b01b8343bfedaca5/IMG_20230509_160316.jpg)
+
+### Block details
+
+In the Bitcoin blockchain, a block has several attributes. (You dont need to understand all of it for now)
+
+- The hash of the previous block that creates the chaining
+- The hash of the Merkle root node of a merkle tree structure with all transcations ( will be explained later)
+- The nonce , which is a random number that is added to the block during the mining process
+- The block‘s hash used for chaining is calculated from the version until the nonce field.
+- The height of the block which refers to the position of the block in the chain.Each block has a unique height, which is determined by the number of blocks that came before it. The height of the block is important because it ensures that the blocks are added to the chain in the correct order
+
+![Untitled](Blockchain%20-%20Detailed%2013308b931cb84ac4b01b8343bfedaca5/Untitled%202.png)
+
+### Genesis Block
+
+The genesis block is the first block in the blockchain network. It is the foundation for the entire system and is the ancestor to which every other block can trace its lineage. The genesis block is unique because it does not have a previous block to reference, so its previous hash is empty. The genesis block is significant because it provides a secure and verifiable chain of transactions that can be used for various applications, from financial transactions to supply chain management.
